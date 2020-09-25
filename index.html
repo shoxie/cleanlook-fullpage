@@ -33,7 +33,7 @@
       #readmore:hover:after {
         margin-left: 10px;
       }
-    </style>
+    </style> 
     <title>Document</title>
   </head>
   <body>
@@ -48,9 +48,27 @@
         <a href="#"><i class="far fa-user-circle pr-3"></i>Account</a>
       </div>
     </nav>
-    <nav class="h-full fixed"></nav>
-    <section id="hero">
-      <div class="relative">
+    <div class="h-screen fixed pr-20" style="right: 0; top: 35%; z-index: 999999999999;">
+      <ul class="text-white float-left">
+        <li><a href="">Start</a></li>
+        <li class="pt-6"><button id="scrollHero">01</button></li>
+        <li class="pt-6"><button id="scrollHero1">02</button></li>
+        <li class="pt-6"><button id="scrollHero2">03</button></li>
+        <li class="pt-6 pr-6"><button id="scrollFooter">End</button></li>
+      </ul>
+    </div>
+    <div class="h-screen fixed pl-20" style="left: 0; top: 35%; z-index: 999999999999;">
+      <ul class="text-white">
+        <li><a href="" style="
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          ">Follow Us</a></li>
+        <li class="pt-3"><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li class="pt-3"><a href=""><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+    <section>
+      <div class="relative" >
         <div
           class="absolute w-full min-h-screen flex flex-col justify-center items-center bg-cover z-50"
         >
@@ -97,10 +115,11 @@
           style="margin-top: -750px;"
         />
         <div
+          
           class="flex flex-col justify-center items-center w-full gap-20"
           style="margin-top: -300px; background-color: #0b1d26; transform: translateY(-300px);"
         >
-          <div class="flex flex-row items-center justify-center gap-20 w-full">
+          <div id="hero" class="flex flex-row items-center justify-center gap-20 w-full">
             <div class="text-left">
               <h1
                 class="uppercase text-orange-300 tracking-normalwide text-xl text-left"
@@ -131,7 +150,7 @@
             </div>
           </div>
           <div class="flex flex-row items-center justify-center gap-20 w-full">
-            <div>
+            <div id="hero1">
               <img src="./images/02.png" alt="" />
             </div>
             <div class="text-left">
@@ -155,7 +174,7 @@
               </button>
             </div>
           </div>
-          <div class="flex flex-row items-center justify-center gap-20 w-full">
+          <div id="hero2" class="flex flex-row items-center justify-center gap-20 w-full">
             <div class="text-left">
               <h1
                 class="uppercase text-orange-300 tracking-normalwide text-xl text-left"
@@ -217,7 +236,46 @@
     </section>
   </body>
   <script type="text/javascript" src="rellax.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     var rellax = new Rellax(".rellax");
+    var hash;
+  $("#scrollFooter").on('click', function(event) {
+
+      $('html, body').animate({
+        scrollTop: $('#footer').offset().top
+      }, 3000, function(){
+   
+        window.location.hash = hash;
+      });
+    
+  });
+  $("#scrollHero").on('click', function(event) {
+
+      $('html, body').animate({
+        scrollTop: $('#hero').offset().top
+      }, 3000, function(){
+
+        window.location.hash = hash;
+});
+});
+$("#scrollHero1").on('click', function(event) {
+
+$('html, body').animate({
+  scrollTop: $('#hero1').offset().top
+}, 3000, function(){
+
+  window.location.hash = hash;
+});
+});
+$("#scrollHero2").on('click', function(event) {
+
+$('html, body').animate({
+  scrollTop: $('#hero2').offset().top
+}, 3000, function(){
+
+  window.location.hash = hash;
+});
+});
   </script>
 </html>
