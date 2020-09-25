@@ -59,12 +59,12 @@
     </div>
     <div class="h-screen fixed pl-20" style="left: 0; top: 35%; z-index: 999999999999;">
       <ul class="text-white">
-        <li><a href="" style="
+        <li><a href="https://facebook.com" style="
           writing-mode: vertical-rl;
           text-orientation: mixed;
           ">Follow Us</a></li>
-        <li class="pt-3"><a href=""><i class="fab fa-instagram"></i></a></li>
-        <li class="pt-3"><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li class="pt-3"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li class="pt-3"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
       </ul>
     </div>
     <section>
@@ -85,7 +85,7 @@
             >
               Be Prepared For The<br />Mountains And Beyond!
             </p>
-            <button class=" rellax text-white font-chronicle">
+            <button id="scrollDown" class="rellax text-white font-chronicle animate-bounce">
               scroll down <i class="fas fa-arrow-down"></i>
             </button>
           </div>
@@ -250,6 +250,15 @@
       });
     
   });
+  $("#scrollDown").on('click', function(event) {
+
+$('html, body').animate({
+  scrollTop: $('#hero').offset().top
+}, 3000, function(){
+
+  window.location.hash = hash;
+});
+});
   $("#scrollHero").on('click', function(event) {
 
       $('html, body').animate({
