@@ -250,51 +250,61 @@
   <script>
     var rellax = new Rellax(".rellax");
     var hash;
-  $("#scrollFooter").on('click', function(event) {
-
-      $('html, body').animate({
-        scrollTop: $('#footer').offset().top
-      }, 3000, function(){
-   
-        window.location.hash = hash;
-      });
-    
-  });
-  $("#scrollDown").on('click', function(event) {
-
-$('html, body').animate({
-  scrollTop: $('#hero').offset().top
-}, 3000, function(){
-
-  window.location.hash = hash;
+    $("#scrollFooter").on("click", function (event) {
+  $("html, body").animate(
+    {
+      scrollTop: $("#footer").offset().top,
+    },
+    3000,
+    function () {
+      window.location.hash = hash;
+    }
+  );
 });
+$("#scrollDown").on("click", function (event) {
+  $("html, body").animate(
+    {
+      scrollTop: $("#hero").offset().top,
+    },
+    3000,
+    function () {
+      window.location.hash = hash;
+    }
+  );
 });
-  $("#scrollHero").on('click', function(event) {
+$("#scrollHero").on("click", function (event) {
+  $("html, body").animate(
+    {
+      scrollTop: $("#hero").offset().top,
+    },
+    3000,
+    function () {
+      window.location.hash = hash;
+    }
+  );
+});
+$("#scrollHero1").on("click", function (event) {
+  $("html, body").animate(
+    {
+      scrollTop: $("#hero1").offset().top,
+    },
+    3000,
+    function () {
+      window.location.hash = hash;
+    }
+  );
+});
+$("#scrollHero2").on("click", function (event) {
+  $("html, body").animate(
+    {
+      scrollTop: $("#hero2").offset().top,
+    },
+    3000,
+    function () {
+      window.location.hash = hash;
+    }
+  );
+});
 
-      $('html, body').animate({
-        scrollTop: $('#hero').offset().top
-      }, 3000, function(){
-
-        window.location.hash = hash;
-});
-});
-$("#scrollHero1").on('click', function(event) {
-
-$('html, body').animate({
-  scrollTop: $('#hero1').offset().top
-}, 3000, function(){
-
-  window.location.hash = hash;
-});
-});
-$("#scrollHero2").on('click', function(event) {
-
-$('html, body').animate({
-  scrollTop: $('#hero2').offset().top
-}, 3000, function(){
-
-  window.location.hash = hash;
-});
-});
   </script>
 </html>
