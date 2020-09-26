@@ -5,7 +5,7 @@ module.exports = {
   },
   purge: {
     enabled: true,
-    content: ['./*.html'],
+    content: ["./*.html"],
   },
   target: "relaxed",
   prefix: "",
@@ -709,7 +709,7 @@ module.exports = {
     borderOpacity: ["responsive", "hover", "focus"],
     borderRadius: ["responsive"],
     borderStyle: ["responsive"],
-    borderWidth: ["responsive"],
+    borderWidth: ["responsive", "active"],
     boxShadow: ["responsive", "hover", "focus"],
     boxSizing: ["responsive"],
     container: ["responsive"],

@@ -1,310 +1,276 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <style>
-      h1::before {
-        display: inline-block;
-        content: "";
-        border-top: 0.2rem solid #fbd784;
-        width: 4rem;
-        margin: -10 1rem;
-        transform: translateY(-1rem);
-        transition: 0.3s;
-      }
-      h1:hover:before {
-        width: 7rem;
-      }
-      #readmore::after {
-        content: "  →";
-        transition: 0.3s;
-      }
-      #readmore:hover:after {
-        margin-left: 10px;
-      }
-      /* Hide scrollbar for Chrome, Safari and Opera */
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <style>
+    h1::before {
+      display: inline-block;
+      content: "";
+      border-top: 0.2rem solid #fbd784;
+      width: 4rem;
+      margin: -10 1rem;
+      transform: translateY(-1rem);
+      transition: 0.3s;
+    }
+
+    h1:hover:before {
+      width: 7rem;
+    }
+
+    #readmore::after {
+      content: "  →";
+      transition: 0.3s;
+    }
+
+    #readmore:hover:after {
+      margin-left: 10px;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
     body::-webkit-scrollbar {
       display: none;
-      }
+    }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+    /* Hide scrollbar for IE, Edge and Firefox */
     body {
-     -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-      }
-    </style> 
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="w-full fixed pt-10 text-white" style="z-index: 999999">
-      <div class="container mx-auto flex justify-between items-center">
-        <h2 class="font-chronicle">MNTN</h2>
-        <ul class="flex flex-row gap-10 font-bold">
-          <li><a href="#">Equipment</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-        <a href="#"><i class="far fa-user-circle pr-3"></i>Account</a>
-      </div>
-    </nav>
-    <div class="h-screen fixed pr-20" style="right: 0; top: 35%; z-index: 999999999999;">
-      <ul class="text-white float-left">
-        <li><a href="">Start</a></li>
-        <li class="pt-6"><button id="scrollHero">01</button></li>
-        <li class="pt-6"><button id="scrollHero1">02</button></li>
-        <li class="pt-6"><button id="scrollHero2">03</button></li>
-        <li class="pt-6 pr-6"><button id="scrollFooter">End</button></li>
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="w-full fixed pt-10 text-white" style="z-index: 999999">
+    <div class="container mx-auto flex justify-between items-center">
+      <h2 class="font-chronicle">MNTN</h2>
+      <ul class="flex flex-row gap-10 font-bold">
+        <li><a href="#">Equipment</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
       </ul>
+      <a href="#"><i class="far fa-user-circle pr-3"></i>Account</a>
     </div>
-    <div class="h-screen fixed pl-20" style="left: 0; top: 35%; z-index: 999999999999;">
-      <ul class="text-white">
-        <li><a href="https://facebook.com" style="
+  </nav>
+  <div class="h-screen fixed pr-20" style="right: 0; top: 35%; z-index: 999999999999;">
+    <ul class="text-white float-left">
+      <li><a href="">Start</a></li>
+      <li class="pt-6"><button id="scrollHero">01</button></li>
+      <li class="pt-6"><button id="scrollHero1">02</button></li>
+      <li class="pt-6"><button id="scrollHero2">03</button></li>
+      <li class="pt-6 pr-6"><button id="scrollFooter">End</button></li>
+    </ul>
+  </div>
+  <div class="h-screen fixed pl-20" style="left: 0; top: 35%; z-index: 999999999999;">
+    <ul class="text-white">
+      <li><a href="https://facebook.com" style="
           writing-mode: vertical-rl;
           text-orientation: mixed;
           ">Follow Us</a></li>
-        <li class="pt-3"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-        <li class="pt-3"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-      </ul>
+      <li class="pt-3"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+      <li class="pt-3"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+  </div>
+  <section>
+    <div class="relative">
+      <div class="absolute w-full min-h-screen flex flex-col justify-center items-center bg-cover z-50">
+        <div style="margin-top: -100px;">
+          <h1 class="rellax uppercase text-orange-300 tracking-normalwide text-xl text-left" data-rellax-speed="5">
+            a hiking guide
+          </h1>
+          <p class="rellax font-chronicle font-semibold text-white leading-loose text-6xl" data-rellax-speed="2">
+            Be Prepared For The<br />Mountains And Beyond!
+          </p>
+          <button id="scrollDown" class="rellax text-white font-chronicle animate-bounce">
+            scroll down <i class="fas fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+      <img src="./images/may.png" class="rellax w-full float-left" style="filter: brightness(80%); margin-top: -100px;"
+        data-rellax-speed="5" />
+      <img src="./images/nui.png" class="rellax absolute w-full" style="top: 305px" data-rellax-speed="3" />
+      <img src="./images/co.png" class="rellax absolute w-full" style="top: 545px" data-rellax-speed="1" />
+      <div class="clearfix"></div>
     </div>
-    <section>
-      <div class="relative" >
-        <div
-          class="absolute w-full min-h-screen flex flex-col justify-center items-center bg-cover z-50"
-        >
-          <div style="margin-top: -100px;">
-            <h1
-              class="rellax uppercase text-orange-300 tracking-normalwide text-xl text-left"
-              data-rellax-speed="5"
-            >
-              a hiking guide
+  </section>
+  <section class="" style="background-color: #0b1d26">
+    <div class="relative min-h-screen">
+      <img class="float-left h-full w-full" src="./images/blur.png" style="margin-top: -750px;" />
+      <div class="flex flex-col justify-center items-center w-full gap-20"
+        style="margin-top: -300px; background-color: #0b1d26; transform: translateY(-300px);">
+        <div id="hero" class="flex flex-row items-center justify-center gap-20 w-full">
+          <div class="text-left">
+            <h1 class="uppercase text-orange-300 tracking-normalwide text-xl text-left">
+              getting started
             </h1>
-            <p
-              class="rellax font-chronicle font-semibold text-white leading-loose text-6xl"
-              data-rellax-speed="2"
-            >
-              Be Prepared For The<br />Mountains And Beyond!
+            <h2 class="text-6xl text-white font-chronicle tracking-normalwide">
+              What Level Are<br />You?
+            </h2>
+            <p class="font-chronicle font-semibold text-white leading-loose text-lg pt-4">
+              Determining what level of hiker you are can be an important tool
+              when<br />planning future hikes. This hiking level guide will
+              help you plan hikes<br />according to different hike ratings set
+              by various websites like All Trails and<br />Modern Hiker. What
+              type of hiker are you – novice, moderate, advanced<br />moderate,
+              expert, or expert backpacker?
             </p>
-            <button id="scrollDown" class="rellax text-white font-chronicle animate-bounce">
-              scroll down <i class="fas fa-arrow-down"></i>
+            <button id="readmore" class="text-orange-300 pt-4">
+              read more
+            </button>
+          </div>
+          <div>
+            <img src="./images/01.png" alt="" />
+          </div>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-20 w-full">
+          <div id="hero1">
+            <img src="./images/02.png" alt="" />
+          </div>
+          <div class="text-left">
+            <h1 class="uppercase text-orange-300 tracking-normalwide text-xl text-left">
+              hiking essentials
+            </h1>
+            <h2 class="text-6xl text-white font-chronicle tracking-normalwide">
+              Picking the right<br />Hiking Gear!
+            </h2>
+            <p class="font-chronicle font-semibold text-white leading-loose text-lg pt-4">
+              The nice thing about beginning hiking is that you don’t really need any<br />special gear, you can
+              probably get away with things you already have.<br />Let’s start with clothing. A typical mistake hiking
+              beginners make is wearing<br />jeans and regular clothes, which will get heavy and chafe wif they
+              get<br />sweaty or wet.
+            </p>
+            <button id="readmore" class="text-orange-300 pt-4">
+              read more
             </button>
           </div>
         </div>
-        <img
-          src="./images/may.png"
-          class="rellax w-full float-left"
-          style="filter: brightness(80%); margin-top: -100px;"
-          data-rellax-speed="5"
-        />
-        <img
-          src="./images/nui.png"
-          class="rellax absolute w-full"
-          style="top: 305px"
-          data-rellax-speed="3"
-        />
-        <img src="./images/co.png" class="rellax absolute w-full" style="top: 545px"
-        data-rellax-speed="1" />
-        <div class="clearfix"></div>
-      </div>
-    </section>
-    <section class="" style="background-color: #0b1d26">
-      <div class="relative min-h-screen">
-        <img
-          class="float-left h-full w-full"
-          src="./images/blur.png"
-          style="margin-top: -750px;"
-        />
-        <div
-          
-          class="flex flex-col justify-center items-center w-full gap-20"
-          style="margin-top: -300px; background-color: #0b1d26; transform: translateY(-300px);"
-        >
-          <div id="hero" class="flex flex-row items-center justify-center gap-20 w-full">
-            <div class="text-left">
-              <h1
-                class="uppercase text-orange-300 tracking-normalwide text-xl text-left"
-              >
-                getting started
-              </h1>
-              <h2
-                class="text-6xl text-white font-chronicle tracking-normalwide"
-              >
-                What Level Are<br />You?
-              </h2>
-              <p
-                class="font-chronicle font-semibold text-white leading-loose text-lg pt-4"
-              >
-                Determining what level of hiker you are can be an important tool
-                when<br />planning future hikes. This hiking level guide will
-                help you plan hikes<br />according to different hike ratings set
-                by various websites like All Trails and<br />Modern Hiker. What
-                type of hiker are you – novice, moderate, advanced<br />moderate,
-                expert, or expert backpacker?
-              </p>
-              <button id="readmore" class="text-orange-300 pt-4">
-                read more
-              </button>
-            </div>
-            <div>
-              <img src="./images/01.png" alt="" />
-            </div>
+        <div id="hero2" class="flex flex-row items-center justify-center gap-20 w-full">
+          <div class="text-left">
+            <h1 class="uppercase text-orange-300 tracking-normalwide text-xl text-left">
+              where you go is the key
+            </h1>
+            <h2 class="text-6xl text-white font-chronicle tracking-normalwide">
+              Understand Your<br /> Map & Timing
+            </h2>
+            <p class="font-chronicle font-semibold text-white leading-loose text-lg pt-4">
+              To start, print out the hiking guide and map. If it’s raining, throw them in a<br />Zip-Lock bag. Read
+              over the guide, study the map, and have a good idea<br />of what to expect. I like to know what my next
+              landmark is as I hike. For<br />example, I’ll read the guide and know that say, in a mile, I make a right
+              turn<br />at the junction..
+            </p>
+            <button id="readmore" class="text-orange-300 pt-4">
+              read more
+            </button>
           </div>
-          <div class="flex flex-row items-center justify-center gap-20 w-full">
-            <div id="hero1">
-              <img src="./images/02.png" alt="" />
-            </div>
-            <div class="text-left">
-              <h1
-                class="uppercase text-orange-300 tracking-normalwide text-xl text-left"
-              >
-                hiking essentials
-              </h1>
-              <h2
-                class="text-6xl text-white font-chronicle tracking-normalwide"
-              >
-                Picking the right<br/>Hiking Gear!
-              </h2>
-              <p
-                class="font-chronicle font-semibold text-white leading-loose text-lg pt-4"
-              >
-              The nice thing about beginning hiking is that you don’t really need any<br/>special gear, you can probably get away with things you already have.<br/>Let’s start with clothing. A typical mistake hiking beginners make is wearing<br/>jeans and regular clothes, which will get heavy and chafe wif they get<br/>sweaty or wet.
-              </p>
-              <button id="readmore" class="text-orange-300 pt-4">
-                read more
-              </button>
-            </div>
+          <div>
+            <img src="./images/03.png" alt="" />
           </div>
-          <div id="hero2" class="flex flex-row items-center justify-center gap-20 w-full">
-            <div class="text-left">
-              <h1
-                class="uppercase text-orange-300 tracking-normalwide text-xl text-left"
-              >
-                where you go is the key
-              </h1>
-              <h2
-                class="text-6xl text-white font-chronicle tracking-normalwide"
-              >
-                Understand Your<br/> Map & Timing
-              </h2>
-              <p
-                class="font-chronicle font-semibold text-white leading-loose text-lg pt-4"
-              >
-              To start, print out the hiking guide and map. If it’s raining, throw them in a<br/>Zip-Lock bag. Read over the guide, study the map, and have a good idea<br/>of what to expect. I like to know what my next landmark is as I hike. For<br/>example, I’ll read the guide and know that say, in a mile, I make a right turn<br/>at the junction..
-              </p>
-              <button id="readmore" class="text-orange-300 pt-4">
-                read more
-              </button>
-            </div>
-            <div>
-              <img src="./images/03.png" alt="" />
-            </div>
         </div>
       </div>
       <div class="clearfix"></div>
-    </section>
-    <section id="footer" style="background-color: #0b1d26; margin-top: -100px;
+  </section>
+  <section id="footer" style="background-color: #0b1d26; margin-top: -100px;
     " class="pb-10">
-      <div class="container mx-auto">
-        <div class="flex justify-between">
+    <div class="container mx-auto">
+      <div class="flex justify-between">
+        <div>
+          <h2 class="text-white">MNTN</h2>
+          <p class="text-white">Get out there & discover your next<br />slope, mountain & destination!</p>
+          <p class="text-gray-500 pt-24">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+        </div>
+        <div class="flex flex-row gap-24">
           <div>
-            <h2 class="text-white">MNTN</h2>
-            <p class="text-white">Get out there & discover your next<br/>slope, mountain & destination!</p>
-            <p class="text-gray-500 pt-24">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+            <h2 class="text-orange-300">More on The Blog</h2>
+            <ul class="text-white pt-5">
+              <li style="margin: 0 0 10px 0;"><a href="">Abount MTN</a></li>
+              <li style="margin: 0 0 10px 0;"><a href="">Contributors & Writers</a></li>
+              <li style="margin: 0 0 10px 0;"><a href="">Write For Us</a></li>
+              <li style="margin: 0 0 10px 0;"><a href="">Contact Us</a></li>
+              <li style="margin: 0 0 10px 0;"><a href="">Privacy Policy</a></li>
+            </ul>
           </div>
-          <div class="flex flex-row gap-24">
-            <div>
-              <h2 class="text-orange-300">More on The Blog</h2>
-              <ul class="text-white pt-5">
-                <li style="margin: 0 0 10px 0;"><a href="">Abount MTN</a></li>
-                <li style="margin: 0 0 10px 0;"><a href="">Contributors & Writers</a></li>
-                <li style="margin: 0 0 10px 0;"><a href="">Write For Us</a></li>
-                <li style="margin: 0 0 10px 0;"><a href="">Contact Us</a></li>
-                <li style="margin: 0 0 10px 0;"><a href="">Privacy Policy</a></li>
-              </ul>
-            </div>
-            <div>
-              <h2 class="text-orange-300">More on MNTN</h2>
-              <ul class="text-white pt-5">
-                <li style="margin: 0 0 10px 0;"><a href="">The Teams</a></li>
-                <li style="margin: 0 0 10px 0;"><a href="">Jobs</a></li>
-                <li style="margin: 0 0 10px 0;"><a href="">Press</a></li>
-              </ul>
-            </div>
+          <div>
+            <h2 class="text-orange-300">More on MNTN</h2>
+            <ul class="text-white pt-5">
+              <li style="margin: 0 0 10px 0;"><a href="">The Teams</a></li>
+              <li style="margin: 0 0 10px 0;"><a href="">Jobs</a></li>
+              <li style="margin: 0 0 10px 0;"><a href="">Press</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-  </body>
-  <script type="text/javascript" src="rellax.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    var rellax = new Rellax(".rellax");
-    var hash;
-    $("#scrollFooter").on("click", function (event) {
-  $("html, body").animate(
-    {
-      scrollTop: $("#footer").offset().top,
-    },
-    3000,
-    function () {
-      window.location.hash = hash;
-    }
-  );
-});
-$("#scrollDown").on("click", function (event) {
-  $("html, body").animate(
-    {
-      scrollTop: $("#hero").offset().top,
-    },
-    3000,
-    function () {
-      window.location.hash = hash;
-    }
-  );
-});
-$("#scrollHero").on("click", function (event) {
-  $("html, body").animate(
-    {
-      scrollTop: $("#hero").offset().top,
-    },
-    3000,
-    function () {
-      window.location.hash = hash;
-    }
-  );
-});
-$("#scrollHero1").on("click", function (event) {
-  $("html, body").animate(
-    {
-      scrollTop: $("#hero1").offset().top,
-    },
-    3000,
-    function () {
-      window.location.hash = hash;
-    }
-  );
-});
-$("#scrollHero2").on("click", function (event) {
-  $("html, body").animate(
-    {
-      scrollTop: $("#hero2").offset().top,
-    },
-    3000,
-    function () {
-      window.location.hash = hash;
-    }
-  );
-});
+    </div>
+  </section>
+</body>
+<script type="text/javascript" src="rellax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  var rellax = new Rellax(".rellax");
+  var hash;
+  $("#scrollFooter").on("click", function (event) {
+    $("html, body").animate(
+      {
+        scrollTop: $("#footer").offset().top,
+      },
+      3000,
+      function () {
+        window.location.hash = hash;
+      }
+    );
+  });
+  $("#scrollDown").on("click", function (event) {
+    $("html, body").animate(
+      {
+        scrollTop: $("#hero").offset().top,
+      },
+      3000,
+      function () {
+        window.location.hash = hash;
+      }
+    );
+  });
+  $("#scrollHero").on("click", function (event) {
+    $("html, body").animate(
+      {
+        scrollTop: $("#hero").offset().top,
+      },
+      3000,
+      function () {
+        window.location.hash = hash;
+      }
+    );
+  });
+  $("#scrollHero1").on("click", function (event) {
+    $("html, body").animate(
+      {
+        scrollTop: $("#hero1").offset().top,
+      },
+      3000,
+      function () {
+        window.location.hash = hash;
+      }
+    );
+  });
+  $("#scrollHero2").on("click", function (event) {
+    $("html, body").animate(
+      {
+        scrollTop: $("#hero2").offset().top,
+      },
+      3000,
+      function () {
+        window.location.hash = hash;
+      }
+    );
+  });
 
-  </script>
+</script>
+
 </html>
