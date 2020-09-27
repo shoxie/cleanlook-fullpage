@@ -37,6 +37,11 @@
       display: none;
     }
 
+    #scrollDown:hover {
+      -webkit-animation: bounce 1s infinite;
+      animation: bounce 1s infinite;
+    }
+
     /* Hide scrollbar for IE, Edge and Firefox */
     body {
       -ms-overflow-style: none;
@@ -89,7 +94,7 @@
           <p class="rellax font-chronicle font-semibold text-white leading-loose text-6xl" data-rellax-speed="2">
             Be Prepared For The<br />Mountains And Beyond!
           </p>
-          <button id="scrollDown" class="rellax text-white font-chronicle animate-bounce">
+          <button id="scrollDown" class="rellax text-white font-chronicle hover:animate-bounce">
             scroll down <i class="fas fa-arrow-down"></i>
           </button>
         </div>
