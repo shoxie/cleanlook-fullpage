@@ -33,3 +33,10 @@
   font-weight: normal;
   src: url("./fonts/Chronicle Display Black.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/SVNGilroy\ Light.otf") format("otf");
+}

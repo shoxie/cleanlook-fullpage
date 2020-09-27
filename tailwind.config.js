@@ -260,6 +260,7 @@ module.exports = {
     },
     fontFamily: {
       chronicle: ["Chronicle Display", "sans-serif"],
+      gilroy: ["Gilroy", "sans-serif"],
       sans: [
         "system-ui",
         "-apple-system",
