@@ -4,8 +4,8 @@ module.exports = {
     // purgeLayersByDefault: true,
   },
   purge: {
-    enabled: true,
-    content: ["./*.html"],
+    // enabled: true,
+    // content: ["./*.html"],
   },
   target: "relaxed",
   prefix: "",
