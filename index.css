@@ -1,0 +1,8 @@
+.hide {
+  background-color: #0b1d26;
+  overflow: hidden;
+}
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
